@@ -47,8 +47,8 @@ img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border-bottom: 1px solid var(--color-accent);
 }
 
@@ -66,6 +66,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-primary-brand);
+  margin-right: 76px;
 }
 
 .header-nav {
@@ -80,14 +81,16 @@ img {
 .header-menu {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header-menu-link {
+  display: inline-block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-dark);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu-link:focus,
@@ -122,8 +125,8 @@ img {
 
 .hero {
   background-color: var(--color-dark);
-  padding-top: 168px;
-  padding-bottom: 168px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -138,6 +141,7 @@ img {
 
 .hero-btn {
   display: block;
+  min-width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -148,13 +152,13 @@ img {
   color: var(--color-whitebg);
   padding: 16px 32px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--color-pressed);
   border-color: var(--color-pressed);
-  cursor: pointer;
 }
 
 .visually-hidden {
@@ -240,7 +244,11 @@ img {
 .team-list-item {
   width: calc((100% -72px) / 4);
   background-color: var(--color-whitebg);
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-container {
+  padding: 32px 16px;
 }
 
 .team-list-title {
@@ -250,7 +258,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-dark);
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -258,7 +265,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .footer {
@@ -314,7 +320,7 @@ img {
 .filter-menu-btn:focus {
   color: var(--color-whitebg);
   background-color: var(--color-pressed);
-  border-color: var(--color-pressed);
+  border: 1px solid transparent;
 }
 
 .filter-result {
@@ -329,7 +335,7 @@ img {
 
 .filter-result-container {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-accent);
   border-top: none;
 }
 
