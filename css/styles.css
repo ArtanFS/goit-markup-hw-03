@@ -115,10 +115,15 @@ img {
   color: var(--color-pressed);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .hero {
   background-color: var(--color-dark);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 168px;
+  padding-bottom: 168px;
 }
 
 .hero-title {
@@ -150,11 +155,6 @@ img {
   background-color: var(--color-pressed);
   border-color: var(--color-pressed);
   cursor: pointer;
-}
-
-.choose {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -194,7 +194,7 @@ img {
 }
 
 .product {
-  padding-bottom: 120px;
+  padding-top: 0;
 }
 
 .product-title {
@@ -221,11 +221,6 @@ img {
   background-color: var(--color-light);
 }
 
-.team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .team-title {
   max-width: 163px;
   font-size: 36px;
@@ -243,6 +238,7 @@ img {
 }
 
 .team-list-item {
+  width: calc((100% -72px) / 4);
   background-color: var(--color-whitebg);
   border-radius: 4px;
 }
@@ -288,9 +284,8 @@ img {
 
 /**-------------Portfolio--------------*/
 
-.filter-container {
+.filter {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .filter-menu {
